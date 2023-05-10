@@ -21,7 +21,7 @@ class PostmanEchoTest {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body()
+                .body("data", equalTo("Hello Netology"))
         ;
 
     }
